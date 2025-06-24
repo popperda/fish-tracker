@@ -46,7 +46,9 @@ Roboflow is a good source for this repo as we will be using its ability to conve
 Some good examples: 
 
 - https://universe.roboflow.com/razvan-jk1bz/fish-detection-kvnwj/dataset/3
-- https://alzayats.github.io/DeepFish/ 
+- https://alzayats.github.io/DeepFish/
+
+
 **Traning** - train the model and set it up
 
 Training models on datasets in YOLO is relatively simple, and some example training scripts are in the training folder in the repo. However, feel free to make changes and tweak the model for any changes using YOLO11's documentation for training here https://docs.ultralytics.com/modes/train/#augmentation-settings-and-hyperparameters.
