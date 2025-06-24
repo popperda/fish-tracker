@@ -11,10 +11,12 @@ This github repo is made for any fish hobbyist or budding aquaculturist who is l
 
 ## Demo
 
-Insert gif or link to demo
-
 A basic demo of each functionality:
-link
+
+
+![demo](https://github.com/user-attachments/assets/1b1ddf7a-f8cf-4c49-95e0-76c562ee8716)
+
+
 
 
 
