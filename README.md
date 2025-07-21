@@ -14,12 +14,15 @@ This github repo is made for any fish hobbyist or budding aquaculturist who is l
 A basic demo of each functionality:
 
 Tracking:
+
 ![demo](https://github.com/user-attachments/assets/1b1ddf7a-f8cf-4c49-95e0-76c562ee8716)
 
 Hunger tracker (Energy tracking, dead fish, fish movement irregularity ALL IN ONE)
+
 ![demo](https://github.com/user-attachments/assets/6dea6af9-1f0e-46b7-a396-0105edcac964)
 
 Density estimation
+
 ![dash](https://github.com/user-attachments/assets/5273304a-fc8c-458f-a116-9d19c0aef702)
 
 
