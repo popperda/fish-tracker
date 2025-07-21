@@ -55,8 +55,10 @@ Some good examples:
 
 Training models on datasets in YOLO is relatively simple, and some example training scripts are in the training folder in the repo. However, feel free to make changes and tweak the model for any changes using YOLO11's documentation for training here https://docs.ultralytics.com/modes/train/#augmentation-settings-and-hyperparameters.
 
+Once a model has been trained, it will tell you in the terminal where the models are being stored. Take the best.pt, then rename it. Choose from one of the scripts in the script folder in this github repository, then download it and create an environment where the model is in the same folder as the script. Once that is done, go to the script and replace *[rename]* with your model's name. Once that is done, make sure that all dependencies in the imports are installed and run the script by its own. Then, all you need is to run the python script and ensure a camera is connected to your device.
+
 **Script Setup** - get the scripts working
 
-
-Once a model has been trained, it will tell you in the terminal where the models are being stored. Take the best.pt, then rename it. Choose from one of the scripts in the script folder in this github repository, then download it and create an environment where the model is in the same folder as the script. Once that is done, go to the script and replace *[rename]* with your model's name. Once that is done, make sure that all dependencies in the imports are installed and run the script by its own. Then, all you need is to run the python script and ensure a camera is connected to your device.
+Either download individual files from the repo or clone the repo; then auto-install the required packages at the requirements.txt.
+Once the packages have been installed, the next step is to open and run the files. A description of the file is included at the top of each file. Once connected to a camera, the files should be able to work properly. Some files depend on preset values (eg. how fast a fish has to be to be speeding, or the pixel-cm ratio) which may have to change based on any new setups.
 
