@@ -31,6 +31,26 @@ Density estimation
 ## Scripts
 
 This is a brief description of what each script in the scripts folder does and what can be expected.
+
+**tracking scripts**
+*tkinterdash.py* - a file that opens a tkinter dashboard containing a 1) regional counter, 2) density calculator, 3) general counter, 4) raw video, and 5) an estimated density of that hour or so (give or take).  Outputs densities to a file. 
+
+*tkinterhunger.py*
+
+*tkinterfeed.py*
+Pseudocode: 
+opens the camera, runs tracking like all others - instead, once fed; runs multiple detection models - the tracking + feed detection, and in the time that passes, tracks how many have disappeared --> thus determining hunger levels ; furthermore, either through the model or through an opencv button, will track for about 15 minutes and see the average speeds/energy consumption - if not a lot, can safely determine they do not want to move "to" the food, and thus aren't hungry.
+Any other methods?
+* track time after feeding, and track irregular movement?
+
+**data analysis scripts**
+*lstm.py* - file that trains the predictive lstm model. Modifications can be made if needed 
+
+*dashboard.py* - tkinter dashboard, which displays all the values of importance in a neat graphical interface. Updates if the files is updated
+
+*scrapehuceen.py* - a webscraping script made with selenium to locate and extract data from the huceen PLC dashboard quickly and conveniently. Extracts every 10 minutes, although this can be changed, as well as the mouse positions(due to the lack of selectable css and html objects on the webpage) depending on the screen size.
+
+*analysisboard.py* - tkinter dashboard that periodically updates the information every time the scraping file updates the data, and updates its predictions as well. The board provides the current values, a historical view of the last hour, and a prediction for the next hour, although the time predicted can be changed to up to the next 1.5 hours.
 ## Deployment
 
 To deploy your own version there are multiple paths to take:
