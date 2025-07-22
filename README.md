@@ -33,9 +33,10 @@ Density estimation
 This is a brief description of what each script in the scripts folder does and what can be expected.
 
 **tracking scripts**
+
 *tkinterdash.py* - a file that opens a tkinter dashboard containing a 1) regional counter, 2) density calculator, 3) general counter, 4) raw video, and 5) an estimated density of that hour or so (give or take).  Outputs densities to a file. 
 
-*tkinterhunger.py*
+*tkinterhunger.py* - a file that opens a tkinter dashboard containing a tracker for the video feed, surrounded with corresponding graphs for speeds, energy, etc. API code links to pushover, which is to be changed to your own API - this will ping a notification for unnatural directions/speeds, and also inform if there has been lots of movement after feeding (possible signs of hunger), and additionally ping if there has been a immobile fish for a long while.
 
 *tkinterfeed.py*
 Pseudocode: 
@@ -44,6 +45,7 @@ Any other methods?
 * track time after feeding, and track irregular movement?
 
 **data analysis scripts**
+
 *lstm.py* - file that trains the predictive lstm model. Modifications can be made if needed 
 
 *dashboard.py* - tkinter dashboard, which displays all the values of importance in a neat graphical interface. Updates if the files is updated
