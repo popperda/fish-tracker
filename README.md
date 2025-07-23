@@ -53,6 +53,11 @@ Any other methods?
 *scrapehuceen.py* - a webscraping script made with selenium to locate and extract data from the huceen PLC dashboard quickly and conveniently. Extracts every 10 minutes, although this can be changed, as well as the mouse positions(due to the lack of selectable css and html objects on the webpage) depending on the screen size.
 
 *analysisboard.py* - tkinter dashboard that periodically updates the information every time the scraping file updates the data, and updates its predictions as well. The board provides the current values, a historical view of the last hour, and a prediction for the next hour, although the time predicted can be changed to up to the next 1.5 hours.
+
+**training scripts**
+
+*train.py* - normal YOLO training script that allows any dataset to be exported in YOLO format then trained. Run this file with the PATH changed to the path to the data.yml in your dataset to train a model.
+
 ## Deployment
 
 To deploy your own version there are multiple paths to take:
