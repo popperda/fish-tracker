@@ -56,7 +56,7 @@ Any other methods?
 
 **training scripts**
 
-*train.py* - normal YOLO training script that allows any dataset to be exported in YOLO format then trained. Run this file with the PATH changed to the path to the data.yml in your dataset to train a model.
+*train.py* - normal YOLO training script that allows any dataset to be exported in YOLO format then trained. Run this file with the PATH changed to the path to the data.yaml in your dataset to train a model.
 
 ## Deployment
 
@@ -96,3 +96,51 @@ Once a model has been trained, it will tell you in the terminal where the models
 Either download individual files from the repo or clone the repo; then auto-install the required packages at the requirements.txt.
 Once the packages have been installed, the next step is to open and run the files. A description of the file is included at the top of each file. Once connected to a camera, the files should be able to work properly. Some files depend on preset values (eg. how fast a fish has to be to be speeding, or the pixel-cm ratio) which may have to change based on any new setups.
 
+## Step by step guide to setting up:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/popperda/fish-tracker.git
+   cd fish-tracker
+   ```
+2. Install dependencies using `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Train your datasets using Path A or Path B as specified above. Once the dataset is finished in roboflow, export it as a YOLO 11 dataset. Put the dataset folder somewhere accessible in the fish-tracker directory.
+4. Change PATH in the *train.py* file to the dataset's data.yaml. It is recommended to edit this in vscode or some other editor. Then tweak the model parameters, and run *train.py*. The model location should be displayed in the terminal. 
+    ```bash
+   python train.py
+   ```
+
+5. In the scripts folder, now replace the model.pt with the path to your model.
+
+6. Then run any script as needed! EG:
+    ```bash
+   python tkinterhunger.py #fish tracking and inactivity estimation
+   ```
+
+PLC management
+
+1. navigate to the scraping folder
+    ```bash
+   cd sensors
+   ```
+
+2. in *scrape.py*, test it and see if the button clicks are accurate. If not, do some trial and error to get it right.
+    ```bash
+   python scrape.py
+   ```
+    After running, make some changes and edits depending on where the mouse is clicking. See this video: ___
+3. Then, once confirmed, run *automatescrape.py*. This will collect data every 10 minutes or so.
+    ```bash
+   python automatescrape.py
+   ```
+
+4. Afterwards, run the analysisboard.py - this will provide a dashboard for the data, as well as make predictions.
+    ```bash
+   python analysisboard.py
+   ```
+
+
+Video on the whole process:
